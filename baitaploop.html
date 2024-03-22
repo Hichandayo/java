@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bai1
+        // const n = parseInt(prompt("nhập số nguyên:"))
+        // for (let i = n; i <= 100; i++) {
+        //     if (i % 2 == 0) {
+        //         console.log(i);
+        //     }
+        // }
+        //bai 2
+        // let n = parseInt(prompt("nhập số "))
+        // let multiply = 1
+        // for (let i = 1; i <= 5; i++) {
+        //     multiply *= i;
+        // }
+        // console.log(multiply)
+        //bai3
+        // let a = parseInt(prompt("Nhập số a: "));
+        // let b = parseInt(prompt("Nhập số b: "));
+        // for (let i = a; i <= b; i++) {
+        //     if (i % 3 == 0 && i % 5 == 0) {
+        //         console.log(i);
+        //     }
+        // }
+        //bai4
+        // let n = parseInt(prompt("nhập số:"));
+        // sum = 0;
+        // for (let i = n; i > 0; i = Math.floor(i /= 10)) {
+        //     sum += i % 10;
+        // }
+        // console.log(sum)
+        //bai4.1
+        // let n = parseInt(prompt("nhập số:"));
+        // sum = "";
+        // for (let i = n; i > 0; i = Math.floor(i /= 10)) {
+        //     sum += (i % 10).toString()
+        // }
+        // console.log(sum)
+        //bai7
+        // let n = parseInt(prompt("nhập số:"));
+        // let count = 0;
+        // for (let i = 1; i <= n; i++) {
+        //     if (n % i === 0) {
+        //         console.log(i);
+        //         count++;
+        //     }
+        // }
+        // console.log(`có số ước là ${count}`);
+        //bai8
+        // let a = parseInt(prompt(`a`));
+        // let b = parseInt(prompt(`b`));
+        // let result = 1;
+        // for (i = 1; i <= b; i++) {
+        //     result *= a;
+        // }
+        // console.log(result);
+        //bai3
+        // let n = parseInt(prompt(`nhap so n`));
+        // sum = 0;
+        // for (let i = 1; i <= n; i++) {
+        //     if (i % 2 != 0) {
+        //         sum += i;
+        //     }
+        //     console.log(sum);
+        // }
+        //bai4
+        // let n = parseInt(prompt("nhập số n:"));
+        // let f1 = 1;
+        // let f2 = 1;
+        // console.log(f1);
+        // console.log(f2);
+        // let fn = 0;
+        // for (let i = 3; i <= n; i++) {
+        //     fn = f1 + f2;
+        //     f1 = f2;
+        //     f2 = fn;
+        // }
+        // console.log(fn);
+        //bai5
+        // let N = parseInt(prompt(`N`));
+        // let P = parseInt(prompt(`P`));
+        // let result = 1;
+        // for (i = 1; i <= P; i++) {
+        //     result *= N;
+        // }
+        // console.log(result);
+        //bai7
+        // let N = parseInt(prompt(`nhap so vao`));
+        // let sum = "";
+        // for (let i = N; i > 0; i = Math.floor(i / 10)) {
+        //     sum += i % 10;
+        // }
+        // console.log(sum.length)
+        //bai8
+        // let n = parseInt(prompt(`nhap so vao`));
+        // let max = 0;
+        // for (let i = n; i > 0; i = Math.floor(i / 10)) {
+        //     if ((i % 10) > max) {
+        //         max = i % 10
+        //     }
+        // }
+        // console.log(max)
+        //baì tập ngoài của Khầy Duy
+        // const number = prompt("Nhập số: ");
+        // let palindrome = "";
+        // for (let i = number; i > 0; i = Math.floor(i / 10)) {
+        //     palindrome += (i % 10).toString();
+        // }
+        // if (number === palindrome) {
+        //     console.log("this is palindrome");
+        // } else {
+        //     console.log("this is not a palindrome");
+        // }
+        //baitap9
+        // const n = parseInt(prompt("nhap so n:"));
+        // let isprime = True;
+        // for (let i = 2; i <= Math.sqrt(x: n); i++) {
+        //     if (n % i === 0) isprime = false;
+        // }
+        // if (isprime) console.log(`${n}la so nguyen to`);
+        // else console.log(`${n}khong phai la so nguyen to`);
+        // baitap1-sgk
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 3 === 0) { console.log(`${i}fizz`) }
+        //     else if (i % 5 === 0) { console.log(`${i}buzz`) }
+        //     else if (i % 3 === 0 && i % 5 === 0) { console.log(`${i}fizzbuzz`) }
+        // }
+        //baitap2-sgk
+        // let i = 0;
+        // while (i <= 30) {
+        //     if (i % 5 === 0) {
+        //         console.log(i)
+        //     }
+        //     i++;
+        // }
+        // const year = parentInt(prompt("Nhập năm: "));
+        // if(year % 4 === 0 && year % 100 !== 0 || year % 400 === 0){
+        //     console.log(`${year} là năm nhuận`);
+        // } else {
+        //     console.log(`${year} không phải là năm nhuận`);
+        // }
+        //baitap4-sgk
+        // let i = 1;
+        // const n = parseInt(prompt("nhap so"));
+        // let a = "";
+        // while (i <= 10) {
+        //     a = i * n;
+        //     console.log(`${n}*${i}=${a}`)
+        //     i++;
+        // }
+        //baitap5-sgk
+        let number = 9;
+        count = 0;
+        while (count < 3) {
+            let n = parseInt(prompt`nhap tu 1 toi 10`);
+            if (n == number) { alert("ban da dung"); break; }
+            else if (n < number) { alert("so lon hon"); }
+            else if (n > number) { alert("so nho hon"); }
+            count++;
+        }
+        if (count === 3) {
+            alert("ban da thua")
+        }
+        //baitap6-sgk
+        // const n = parseInt(prompt("nhap so n"));
+        // let count = 0;
+        // while (count <= n) {
+        //     console.log(count)
+        //     count++;
+        // }
+        //baitap7-sgk
+        // let i = 0;
+        // let sum = 0;
+        // let count = 0;
+        // while (count < 30) {
+        //     if (i % 7 === 0) { sum += i; count++; }
+        //     i++;
+        //     console.log(sum);
+        // }
+        //ngat doan
+        // let n = parseInt(prompt("nhap so"));
+        // let isPrime = true;
+        // for (i = 2; i < n; i++) {
+        //     if (n % i === 0) isPrime = false;
+        // }
+        // if (isPrime) console.log("day la so nguyen to")
+        // else console.log("day khong phai la so nguyen to")
+        // ngat doan
+        // let i = 0;
+        // let sum = 0;
+        // let count = 0;
+        // while (count < 30) {
+        //     if (i % 7 === 0) { sum += i; count++ }
+        //     i++;
+        //     console.log(sum);
+        // }
+        // let N = parseInt(prompt("nhap so N"));
+        // let P = parseInt(prompt("nhap so P"));
+        // let result = 1;
+        // for (let i = 1; i <= P; i++) {
+        //     result *= N;
+        // }
+        // console.log(result);
+        // let N = parseInt(prompt(`N`));
+        // let P = parseInt(prompt(`P`));
+        // let result = 1;
+        // for (i = 1; i <= P; i++) {
+        //     result *= N;
+        // }
+        // console.log(result);
+
+
+    </script>
+
+</body>
+
+</html>
